@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bachelor's Thesis</title>
+        <style>
+            .meta-tags {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 12px;
+                flex-wrap: wrap;
+                }
+            .tag {
+                background-color: #f1f8ff;
+                color: #00001C;
+                padding: 4px 10px;
+                border-radius: 20px;
+                font-size: 0.85em;
+                font-weight: bold;
+            }
+            .tag.id {
+                color: #00001C;
+                background-color: #e6e6fa;
+            }
+            .tag.age {
+                color: 	#00793D;
+                background-color: 	#B4DDC0;
+            }
+            .tag.female {
+                color: #c93a70;
+                background-color: 	#F6ADC6;
+            }
+            .tag.male {
+                color: #0366d6;
+                background-color: #72C6EF;
+            }
+
+            .flex-container {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 50px;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding-bottom: 16px;
+            }
+
+            .flex-card {
+                background-color: #ffffff;
+                border: 1px solid #e1e4e8;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                flex: 0 0 auto;
+                min-width: 260px;
+            }
+
+            .section-title {
+                font-size: 1.3em;
+                margin-bottom: 20px;
+                color: #24292e;
+                border-left: 4px solid #0366d6;
+                padding-left: 10px;
+            }
+
+            .converted-label {
+                color: #0366d6;
+                margin: 0 0 12px 0;
+                font-size: 0.9em;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p><a href="../index.html">Back to Top</a></p>
+
+        <h1>Identity-Preserving Speaker Attribute Editing</h1>
+        <p>Audio Samples from VCTK dataset</p>
+
+        <hr>
+
+        <h3 class="section-title">Original Audio (p253_089)</h3>
+        <div class="flex-container">
+            <div class="flex-card">
+                <p class="converted-label" style="color: #586069;">Original</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p253</span>
+                    <span class="tag age">Age: 22</span>
+                    <span class="tag female">Gender: Female</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p253_089_original.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <h3 class="section-title">Gender Editing</h3>
+        <div class="flex-container">
+            <div class="flex-card">
+                <p class="converted-label">Female to Male</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p253</span>
+                    <span class="tag age">Age: 22</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p253_089_male.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <h3 class="section-title">Age Editing</h3>
+        <div class="flex-container">
+            <div class="flex-card">
+                <p class="converted-label">Converted to 30s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p253</span>
+                    <span class="tag female">Gender: Female</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p253_089_age_35.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex-card">
+                <p class="converted-label">Converted to 40s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p253</span>
+                    <span class="tag female">Gender: Female</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p253_089_age_45.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex-card">
+                <p class="converted-label">Converted to 50s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p253</span>
+                    <span class="tag female">Gender: Female</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p253_089_age_55.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex-card">
+                <p class="converted-label">Converted to 60s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p253</span>
+                    <span class="tag female">Gender: Female</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p253_089_age_65.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex-card">
+                <p class="converted-label">Converted to 70s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p253</span>
+                    <span class="tag female">Gender: Female</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p253_089_age_75.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3 class="section-title">Original Audio (p271_021)</h3>
+        <div class="flex-container">
+            <div class="flex-card">
+                <p class="converted-label" style="color: #586069;">Original</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p271</span>
+                    <span class="tag age">Age: 19</span>
+                    <span class="tag male">Gender: Male</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p271_021_original.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <h3 class="section-title">Gender Editing</h3>
+        <div class="flex-container">
+            <div class="flex-card">
+                <p class="converted-label">Male to Female</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p271</span>
+                    <span class="tag age">Age: 19</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p271_021_female.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <h3 class="section-title">Age Editing</h3>
+        <div class="flex-container">
+            <div class="flex-card">
+                <p class="converted-label">Converted to 30s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p271</span>
+                    <span class="tag gender male">Gender: Male</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p271_021_age_35.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex-card">
+                <p class="converted-label">Converted to 40s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p271</span>
+                    <span class="tag gender male">Gender: Male</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p271_021_age_45.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex-card">
+                <p class="converted-label">Converted to 50s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p271</span>
+                    <span class="tag gender male">Gender: Male</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p271_021_age_55.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex-card">
+                <p class="converted-label">Converted to 60s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p271</span>
+                    <span class="tag gender male">Gender: Male</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p271_021_age_65.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="flex-card">
+                <p class="converted-label">Converted to 70s</p>
+                <div class="meta-tags">
+                    <span class="tag id">ID: p271</span>
+                    <span class="tag gender male">Gender: Male</span>
+                </div>
+                <audio controls>
+                    <source src="samples/p271_021_age_75.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </body>
+</html>
